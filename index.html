@@ -1,0 +1,289 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            background-color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tt1 {
+            border-spacing: 0;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        hr {
+            border-top: 1px solid red;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 3.5vw;
+                padding: 0.1em 0.6em;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            h1 {
+                font-size: 22px;
+                padding: 0.4em 2em;
+            }
+        }
+
+        button {
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        button:before {
+            content: "";
+            background: linear-gradient(45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        button:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: small;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="show(1)"><h1>CANAL+</h1></button>
+<button onclick="show(2)"><h1>CANAL+ SPORT</h1></button>
+<button onclick="show(3)"><h1>CANAL+ PREMIER LEAGUE</h1></button>
+<button onclick="show(4)"><h1>CANAL+ SPORT WEEK-END</h1></button>
+<button onclick="show(5)"><h1>CANAL+ LIGUE 1</h1></button>
+<button onclick="show(6)"><h1>CANAL+ TOP 14</h1></button>
+<button onclick="show(7)"><h1>CANAL+ FORMULA 1</h1></button>
+<button onclick="show(8)"><h1>CANAL+ MOTOGP</h1></button>
+<button onclick="show(9)"><h1>CANAL+ DÉCALÉ </h1></button>
+<button onclick="show(10)"><h1>FOOT+</h1></button>
+<button onclick="show(11)"><h1>GOLF+</h1></button>
+<button onclick="show(12)"><h1>INFOSPORT+</h1></button>
+<button onclick="show(13)"><h1>MULTISPORT 1</h1></button>
+<button onclick="show(14)"><h1>MULTISPORT 2</h1></button>
+<button onclick="show(15)"><h1>MULTISPORT 3</h1></button>
+<button onclick="show(16)"><h1>MULTISPORT 4</h1></button>
+<button onclick="show(17)"><h1>ALL CANAL+ CHANNELS</h1></button>
+<button onclick="show(18)"><h1>BEIN SPORTS 1</h1></button>
+<button onclick="show(19)"><h1>BEIN SPORTS 2</h1></button>
+<button onclick="show(20)"><h1>BEIN SPORTS 3</h1></button>
+<button onclick="show(21)"><h1>BEIN SPORTS MAX 4</h1></button>
+<button onclick="show(22)"><h1>BEIN SPORTS MAX 5</h1></button>
+<button onclick="show(23)"><h1>BEIN SPORTS MAX 6</h1></button>
+<button onclick="show(24)"><h1>BEIN SPORTS MAX 7</h1></button>
+<button onclick="show(25)"><h1>BEIN SPORTS MAX 8</h1></button>
+<button onclick="show(26)"><h1>BEIN SPORTS MAX 9</h1></button>
+<button onclick="show(27)"><h1>BEIN SPORTS MAX 10</h1></button>
+<button onclick="show(28)"><h1>ALL BEIN SPORTS CHANNELS</h1></button>
+<button onclick="show(29)"><h1>EUROSPORT 1</h1></button>
+<button onclick="show(30)"><h1>EUROSPORT 2</h1></button>
+<button onclick="show(31)"><h1>ALL EUROSPORT CHANNELS</h1></button>
+<button onclick="show(32)"><h1>RMC SPORT 1</h1></button>
+<button onclick="show(33)"><h1>RMC SPORT 2</h1></button>
+<button onclick="show(34)"><h1>RMC SPORT 3</h1></button>
+<button onclick="show(35)"><h1>RMC SPORT 4</h1></button>
+<button onclick="show(36)"><h1>RMC SPORT LIVE 5</h1></button>
+<button onclick="show(37)"><h1>RMC SPORT LIVE 6</h1></button>
+<button onclick="show(38)"><h1>RMC SPORT LIVE 7</h1></button>
+<button onclick="show(39)"><h1>RMC SPORT LIVE 8</h1></button>
+<button onclick="show(40)"><h1>RMC SPORT LIVE 9</h1></button>
+<button onclick="show(41)"><h1>RMC SPORT LIVE 10</h1></button>
+<button onclick="show(42)"><h1>RMC SPORT NEWS</h1></button>
+<button onclick="show(43)"><h1>ALL RMC SPORT CHANNELS</h1></button>
+<button onclick="show(44)"><h1>L'EQUIPE TV</h1></button>
+   
+
+    <iframe id="1" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/canal-france-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="2" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-sport-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="3" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-premier-league-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="4" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-sport-week-end-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="5" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-ligue-1-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="6" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-top-14-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="7" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-formula-1-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="8" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-moto-gp-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="9" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/canal-decale-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="10" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/foot-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="11" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/06/golf-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="12" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/infosport-plus-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="13" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/multisport-1-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="14" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/multisport-2-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="15" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/multisport-3-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="16" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/multisport-4-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="17" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/all-canal-channels-france-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="18" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/bein-sports-1-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="19" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/bein-sports-2-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="20" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/bein-sports-3-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="21" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-4-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="22" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-5-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="23" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-6-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="24" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-7-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="25" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-8-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="26" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-9-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="27" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/bein-sports-max-10-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="28" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2023/01/all-bein-sports-channels-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="29" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/eurosport-1-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="30" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/eurosport-2-full-hd-france.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="31" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/03/all-eurosport-channels-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="32" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2023/01/rmc-sport-1-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="33" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2023/01/rmc-sport-2-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="34" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-3-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="35" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-4-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="36" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-5-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="37" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-6-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="38" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-7-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="39" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-8-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="40" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-9-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="41" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-live-10-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="42" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2022/03/rmc-sport-news-full-hd.html" width="100%" style="display: none;"></iframe>
+    <iframe id="43" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="http://www.neymartv.net/2023/01/all-rmc-sport-channels-full-hd.html" width="100%"
+        style="display: none;"></iframe>
+    <iframe id="44" allowfullscreen="true" frameborder="0" height="580px" scrolling="1"
+        src="https://www.neymartv.net/2022/05/lequipe-tv-full-hd.html" width="100%" style="display: none;"></iframe>
+</body>
+
+<script>
+    function show(x) {
+        var x = document.getElementById(x);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</html>
